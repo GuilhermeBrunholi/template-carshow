@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/compiler/bootstrap.css">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+    <!-- my js -->
+    <script src="./js/main.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand title-font" href="index.html">Car Show</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="comprar.html">Comprar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vender.html">Vender</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Notícias</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control input-color" type="search" placeholder="Procurar..." aria-label="Search">
+                <button class="btn btn-outline btn-color my-2 my-sm-0" type="submit">Procurar</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h2 class="text-body-titulo title-font"> - Cadastro de veículo - </h2>
+        <br>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputMarca" class="form-text">Marca</label>
+                    <select class="form-control" id="inputMarca">
+                        <option selected>Marca...</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputModelo" class="form-text">Modelo</label>
+                    <select class="form-control" id="inputModelo">
+                        <option selected>Modelo...</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputAno" class="form-text">Ano</label>
+                    <select class="form-control" id="inputAno">
+                        <option selected>Ano...</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputPreco" class="form-text">Preço</label>
+                    <input class="form-control" id="inputPreco" placeholder="Ex: 15.000,00">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputRua" class="form-text">Rua</label>
+                <input type="text" class="form-control" id="inputRua" placeholder="Ex: Av. Brasil">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputPais" class="form-text">País</label>
+                    <select id="inputPais" class="form-control">
+                        <option selected>País...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputEstado" class="form-text">Estado</label>
+                    <select class="form-control" id="inputEstado">
+                        <option selected>Estado...</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputBairro" class="form-text">Bairro</label>
+                    <input type="text" class="form-control" id="inputBairro">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+        <br>
+    </div>
+
+    <footer class="page-footer copy">
+        <div class="footer-copyright text-center py-3">© 2019 by: Guilherme Brunholi</div>
+    </footer>
+
+    <!-- js bootstrap -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
